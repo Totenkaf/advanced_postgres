@@ -9,7 +9,7 @@
 - Cоздать ВМ с Ubuntu 20.04/22.04 или развернуть докер любым удобным способом:
 Исполнение производилось в среде VK Cloud, использовалась ВМ с образом Centos 8 Stream. 
 Все последующие команды выполнялись согласно специфике Centos 8 и доступного пакетного менеджера Yum
-`![](./static/1.png)`
+`![](./static/01.png)`
 
 - Поставить на нем Docker Engine
 Выполнялись команды:
@@ -31,13 +31,13 @@ sudo systemctl enable docker
 # проверим версию docker
 docker --version
 ~~~
-![](./static/2.png)
+![](./static/02.png)
 
 - Cделать каталог /var/lib/postgres
 ~~~bash
 sudo mkdir /var/lib/postgres
 ~~~
-![](./static/3.png)
+![](./static/03.png)
 
 - Развернуть контейнер с PostgreSQL 15 смонтировав в него /var/lib/postgres
 Для удобства развертывания пошел путем docker-compose:
@@ -69,7 +69,7 @@ services:
 ~~~bash
 chown -R 999:999 /var/lib/postgresql # PostgreSQL в контейнере работает от пользователя с UID 999
 ~~~
-![](./static/4.png)
+![](./static/04.png)
 
 Запустим, проверим логи и подключимся с хостовой машины
 ~~~bash
@@ -79,9 +79,9 @@ docker logs postgres-db
 docker exec -it postgres-db psql -U postgres -d app_db
 \conninfo
 ~~~
-![](./static/5.png)
-![](./static/6.png)
-![](./static/7.png)
+![](./static/05.png)
+![](./static/06.png)
+![](./static/07.png)
 
 - Развернуть контейнер с клиентом postgres
 Добавим в docker-compose.yml секцию с 
@@ -101,7 +101,7 @@ Alpine - наиболее легковесный образ, сразу соде
 docker compose up -d
 docker ps -a
 ~~~
-![](./static/8.png)
+![](./static/08.png)
 
 - Подключится из контейнера с клиентом к контейнеру с сервером и сделать таблицу с парой строк
 ~~~bash
@@ -113,7 +113,7 @@ INSERT INTO configmap VALUES (0), (1), (2);
 \dt+
 SELECT * FROM configmap;
 ~~~
-![](./static/9.png)
+![](./static/09.png)
 
 - Подключится к контейнеру с сервером с ноутбука/компьютера извне инстансов ЯО/места установки докера
 Предварительно на ВМ в облачном контуре VK CLoud был выделен "белый" IP-адрес и открыт порт 5432 "наружу". 
