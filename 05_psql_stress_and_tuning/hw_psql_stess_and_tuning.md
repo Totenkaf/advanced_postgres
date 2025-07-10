@@ -47,7 +47,7 @@ pgbench -i -s 100 testdb
 ```
 Нагрузочное тестирование
 ```bash
-pgbench -c 20 -j 2 -t 5000 testdb"
+pgbench -c 20 -j 2 -t 5000 testdb
 ````
 
 Результаты:
@@ -68,6 +68,17 @@ pgbench -c 20 -j 2 -t 5000 testdb"
 | 9    | 10,691.07  | max_worker_processes=8<br>max_parallel_workers_per_gather=2<br>max_parallel_workers=8<br>max_parallel_maintenance_workers=2<br>with pg_prewarm<br>hit_to_read_ratio = 82%                                                                                                                                                                                                                                 | 1.04%    | 70.44%      | %Cpu(s):  2.9 us,  2.1 sy,  0.0 ni, 93.0 id,  1.9 wa,  0.0 hi,  0.0 si,  0.0 st<br>MiB Mem :  32089.3 total,  27819.9 free,    311.5 used,   3958.0 buff/cache |
 | 10   | 10,528.42  | track_activities=off<br>track_counts=off<br>with pg_prewarm<br>hit_to_read_ratio = 82%                                                                                                                                                                                                                                                                                                                  | -1.52%   | 67.85%      | %Cpu(s): 27.9 us, 15.0 sy,  0.0 ni, 53.2 id,  3.7 wa,  0.0 hi,  0.2 si,  0.0 st<br>MiB Mem :  32089.3 total,  27034.5 free,    354.7 used,   4700.1 buff/cache<br>похоже на погрешность измерения |
 | 11   | 29,077.27  | fsync=off<br>checkpoint_warning=0<br>hot_standby=off<br>autovacuum=off<br>synchronous_commit=off<br>full_page_writes=off<br>with pg_prewarm<br>hit_to_read_ratio = 82%                                                                                                                                                                                                                                   | 176.18%  | 363.56%     | %Cpu(s): 27.9 us, 15.0 sy,  0.0 ni, 53.2 id,  3.7 wa,  0.0 hi,  0.2 si,  0.0 st<br>MiB Mem :  32089.3 total,  27034.5 free,    354.7 used,   4700.1 buff/cache<br>заметил, что исчезло падение в производительности, при первом запуске pgbench<br>в моменте разгонялся до 30к tps |
+
+
+hit_to_read_ratio вычислялся как:
+```postgresql
+SELECT datname, blks_hit, blks_read,
+CASE
+	WHEN blks_read = 0 THEN NULL -- избегаем деления на ноль
+	ELSE 100 * (blks_hit::numeric / (blks_read + blks_hit))
+END AS hit_to_read_ratio
+FROM pg_stat_database WHERE datname = 'testdb';
+```
 
 Настройка shared_buffers, effective_cache_size, work_mem положительно влияет на TPS.  
 Отключение механизмов надёжности (fsync, synchronous_commit, full_page_writes) резко повышает производительность (TPS вырос более чем в 4 раза).   
@@ -101,7 +112,8 @@ pgbench -c 20 -j 2 -t 5000 testdb"
 
 *: аналогично протестировать через утилиту https://github.com/Percona-Lab/sysbench-tpcc (требует установки
 https://github.com/akopytov/sysbench)
-Установка
+
+Установка:
 ```bash
 curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.deb.sh | sudo bash
 sudo apt -y install sysbench
