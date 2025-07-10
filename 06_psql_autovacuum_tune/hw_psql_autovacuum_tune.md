@@ -240,12 +240,18 @@ ALTER TABLE test_table SET (autovacuum_enabled = off);
 DO $$
 DECLARE
     i INT;
+    table_size TEXT;
 BEGIN
     FOR i IN 1..10 LOOP
         RAISE NOTICE 'Шаг цикла: %', i;
 
         -- Обновляем все строки в таблице
         UPDATE test_table SET text_field = text_field || 'iota';
+
+        -- Проверяем размер таблицы
+        SELECT pg_size_pretty(pg_relation_size('test_table')) INTO table_size;
+        RAISE NOTICE 'Размер таблицы: %', table_size;
+
     END LOOP;
 END;
 $$ LANGUAGE plpgsql;
