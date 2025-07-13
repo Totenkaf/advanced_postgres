@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e2a3925-914e-4e87-b90e-1042e1d40014" name="Changes" comment="" />
+    <list default="true" id="1e2a3925-914e-4e87-b90e-1042e1d40014" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_psql_dql_joins/hw_psql_dql_joins.md" beforeDir="false" afterPath="$PROJECT_DIR$/09_psql_dql_joins/hw_psql_dql_joins.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,27 +16,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2yYb58EhOHLHYB1botsz6Naynax" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/a.ustsov/technopark/advanced_postgres",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/a.ustsov/technopark/advanced_postgres/09_psql_dql_joins&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/09_psql_dql_joins" />
+      <recent name="$PROJECT_DIR$/08_psql_locks" />
+      <recent name="$PROJECT_DIR$/07_psql_wals" />
+      <recent name="$PROJECT_DIR$/06_psql_autovacuum_tune/lection" />
+      <recent name="$PROJECT_DIR$/06_psql_autovacuum_tune" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/08_psql_locks/static" />
+      <recent name="$PROJECT_DIR$/08_psql_locks/lection" />
+      <recent name="$PROJECT_DIR$/07_psql_wals/lection" />
+      <recent name="$PROJECT_DIR$/05_psql_stress_and_tuning/static" />
+      <recent name="$PROJECT_DIR$/05_psql_stress_and_tuning/lection" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -51,6 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1750014267769</updated>
       <workItem from="1750014268869" duration="7698000" />
+      <workItem from="1751904599426" duration="62734000" />
+      <workItem from="1752431601090" duration="4213000" />
     </task>
     <servers />
   </component>
