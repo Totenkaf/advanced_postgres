@@ -244,4 +244,9 @@ SELECT * FROM test ORDER BY created_at DESC LIMIT 10;
 SELECT * FROM test ORDER BY created_at DESC LIMIT 10;
 SELECT * FROM test2 ORDER BY created_at DESC LIMIT 10;
 ```
-![](./static/07.png)
+![](./static/07.png
+
+C какими проблемами столкнулся:
+- не поменял listen_addresses в конфиге, из-за этого при попытке создать SUBSCRIPTION получал connection refused
+- не открыл порт 5432 на ВМках кластера, из-за этого также получал connection refused
+- не назначил пользователю replicator доступ на чтение до таблиц test и test2 на ВМках, из-за этого при добавлении данных ничего не появлялось, ошибку смог найти только в логах инстанса
