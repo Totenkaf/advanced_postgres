@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e2a3925-914e-4e87-b90e-1042e1d40014" name="Changes" comment="" />
+    <list default="true" id="1e2a3925-914e-4e87-b90e-1042e1d40014" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,27 +23,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/a.ustsov/technopark/advanced_postgres/11_psql_partitioning",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/a.ustsov/technopark/advanced_postgres/14_psql_replication/lection&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/14_psql_replication/lection" />
+      <recent name="$PROJECT_DIR$/13_psql_backups/lection" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/12_psql_triggers/lection" />
       <recent name="$PROJECT_DIR$/11_psql_partitioning" />
-      <recent name="$PROJECT_DIR$/11_psql_partitioning/lection" />
-      <recent name="$PROJECT_DIR$/09_psql_dql_joins" />
-      <recent name="$PROJECT_DIR$/08_psql_locks" />
-      <recent name="$PROJECT_DIR$/07_psql_wals" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/08_psql_locks/static" />
@@ -72,6 +74,8 @@
       <workItem from="1752431601090" duration="6951000" />
       <workItem from="1753438027565" duration="17000" />
       <workItem from="1754213295920" duration="10502000" />
+      <workItem from="1755368589452" duration="4572000" />
+      <workItem from="1755430318502" duration="610000" />
     </task>
     <servers />
   </component>
