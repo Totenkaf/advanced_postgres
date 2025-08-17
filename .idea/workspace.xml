@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e2a3925-914e-4e87-b90e-1042e1d40014" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13_psql_backups/hw_psql_backups.md" beforeDir="false" afterPath="$PROJECT_DIR$/13_psql_backups/hw_psql_backups.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_psql_replication/hw_psql_replication.md" beforeDir="false" afterPath="$PROJECT_DIR$/14_psql_replication/hw_psql_replication.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <workItem from="1753438027565" duration="17000" />
       <workItem from="1754213295920" duration="10502000" />
       <workItem from="1755368589452" duration="4572000" />
-      <workItem from="1755430318502" duration="4263000" />
+      <workItem from="1755430318502" duration="11632000" />
     </task>
     <servers />
   </component>
