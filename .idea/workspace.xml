@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e2a3925-914e-4e87-b90e-1042e1d40014" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_psql_replication/hw_psql_replication.md" beforeDir="false" afterPath="$PROJECT_DIR$/14_psql_replication/hw_psql_replication.md" afterDir="false" />
-    </list>
+    <list default="true" id="1e2a3925-914e-4e87-b90e-1042e1d40014" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,11 +37,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/14_psql_replication/static" />
       <recent name="$PROJECT_DIR$/14_psql_replication/lection" />
       <recent name="$PROJECT_DIR$/13_psql_backups/lection" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/12_psql_triggers/lection" />
-      <recent name="$PROJECT_DIR$/11_psql_partitioning" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/08_psql_locks/static" />
@@ -76,7 +73,7 @@
       <workItem from="1753438027565" duration="17000" />
       <workItem from="1754213295920" duration="10502000" />
       <workItem from="1755368589452" duration="4572000" />
-      <workItem from="1755430318502" duration="11950000" />
+      <workItem from="1755430318502" duration="12210000" />
     </task>
     <servers />
   </component>

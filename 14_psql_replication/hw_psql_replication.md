@@ -244,7 +244,7 @@ SELECT * FROM test ORDER BY created_at DESC LIMIT 10;
 SELECT * FROM test ORDER BY created_at DESC LIMIT 10;
 SELECT * FROM test2 ORDER BY created_at DESC LIMIT 10;
 ```
-![](./static/07.png
+![](./static/07.png)
 
 C какими проблемами столкнулся:
 - не поменял listen_addresses в конфиге, из-за этого при попытке создать SUBSCRIPTION получал connection refused
